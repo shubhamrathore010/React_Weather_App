@@ -1,6 +1,7 @@
 import React from "react";
 import { useWeather } from "../context/weather";
 
+
 const Input = () => { 
 const weather = useWeather()
     console.log('Weather', weather);
