@@ -1,4 +1,6 @@
 import './App.css';
+import  './App.module.css';
+
 import { useEffect } from 'react';
 import Card from './components/Card';
 import Input from './components/Input'
@@ -19,10 +21,12 @@ weather.fetchCurrentUserLocationData();
   return (
     <div className="App">
     <h1>Weather Forecast</h1>
-    <Input />
+    <Input className="input-style" />
     <Button onClick={weather.fetchData} value="Search"/>
     <Card />
     <Button onClick={refresh}  value="Refresh"/>
+
+    
     </div>
   );
 }
